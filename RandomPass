@@ -1,3 +1,4 @@
+
 def Sec_Password():
 	p_length = int(input("How long do you want the password?"))
 	user_num = input("Do you want numbers in your password? y/n")
@@ -10,18 +11,18 @@ def Sec_Password():
 	lo_char=[]
 	up_char=[]
 	symbols=[]
-	if user_num =="y" or user_num =="Y":
+	if user_num.lower() =="y":
 		numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 		type_counter+=1
-	if lo_char =="y" or lo_char=="Y":
+	if user_lo.lower() =="y":
 		 lo_char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q',
 		 'r', 's', 't', 'u', 'v', 'w', 'x', 'y','z']
 		 type_counter+=1
-	if up_char =="y" or up_char=="Y":
+	if up_char.lower() =="y":
 		up_char = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'M', 'N', 'O', 'p', 'Q',
 		'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z']
 		type_counter+=1
-	if user_sym =="y" or user_sym =="Y":
+	if user_sym.lower() =="y":
 		symbols = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',
 		'*', '(', ')', '<']
 		type_counter+=1
